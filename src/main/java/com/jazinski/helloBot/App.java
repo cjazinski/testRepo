@@ -37,7 +37,7 @@ public class App  {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    		bot.joinChannel("#longhorn");
+    		bot.joinChannel("#cjazinski");
         
     }
 }

@@ -67,3 +67,143 @@
 2016-10-03 16:10:45 INFO  MyBot:20 - Messages: 
 2016-10-03 16:10:46 INFO  MyBot:20 - Messages: 
 2016-10-03 16:12:30 INFO  MyBot:20 - Messages: 
+2016-10-05 10:27:01 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@672c7736: startup date [Wed Oct 05 10:27:01 CDT 2016]; root of context hierarchy
+2016-10-05 10:27:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 10:27:01 INFO  User:22 - Error has occured :(
+2016-10-05 10:27:01 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@672c7736: startup date [Wed Oct 05 10:27:01 CDT 2016]; root of context hierarchy
+2016-10-05 11:31:47 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@65c9cde2: startup date [Wed Oct 05 11:31:47 CDT 2016]; root of context hierarchy
+2016-10-05 11:31:47 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:31:47 INFO  User:22 - Error has occured :(
+2016-10-05 11:31:47 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.springframework.jdbc.datasource.DriverManagerDataSource] for bean with name 'dataSource' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: org.springframework.jdbc.datasource.DriverManagerDataSource
+2016-10-05 11:31:48 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@12f24363: startup date [Wed Oct 05 11:31:48 CDT 2016]; root of context hierarchy
+2016-10-05 11:31:48 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:31:48 INFO  User:22 - Error has occured :(
+2016-10-05 11:31:48 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.springframework.jdbc.datasource.DriverManagerDataSource] for bean with name 'dataSource' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: org.springframework.jdbc.datasource.DriverManagerDataSource
+2016-10-05 11:31:51 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49041cdb: startup date [Wed Oct 05 11:31:51 CDT 2016]; root of context hierarchy
+2016-10-05 11:31:51 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:31:51 INFO  User:22 - Error has occured :(
+2016-10-05 11:31:51 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.springframework.jdbc.datasource.DriverManagerDataSource] for bean with name 'dataSource' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: org.springframework.jdbc.datasource.DriverManagerDataSource
+2016-10-05 11:31:52 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35db9d12: startup date [Wed Oct 05 11:31:52 CDT 2016]; root of context hierarchy
+2016-10-05 11:31:52 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:31:52 INFO  User:22 - Error has occured :(
+2016-10-05 11:31:52 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.springframework.jdbc.datasource.DriverManagerDataSource] for bean with name 'dataSource' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: org.springframework.jdbc.datasource.DriverManagerDataSource
+2016-10-05 11:34:45 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@462784b5: startup date [Wed Oct 05 11:34:45 CDT 2016]; root of context hierarchy
+2016-10-05 11:34:45 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:34:46 INFO  User:22 - Error has occured :(
+2016-10-05 11:34:46 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'driverClass' of bean class [org.springframework.jdbc.datasource.DriverManagerDataSource]: Bean property 'driverClass' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+2016-10-05 11:34:47 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@43082875: startup date [Wed Oct 05 11:34:47 CDT 2016]; root of context hierarchy
+2016-10-05 11:34:47 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:34:47 INFO  User:22 - Error has occured :(
+2016-10-05 11:34:47 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'driverClass' of bean class [org.springframework.jdbc.datasource.DriverManagerDataSource]: Bean property 'driverClass' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+2016-10-05 11:34:48 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@52a88b2f: startup date [Wed Oct 05 11:34:48 CDT 2016]; root of context hierarchy
+2016-10-05 11:34:48 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:34:48 INFO  User:22 - Error has occured :(
+2016-10-05 11:34:48 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'driverClass' of bean class [org.springframework.jdbc.datasource.DriverManagerDataSource]: Bean property 'driverClass' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+2016-10-05 11:35:57 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58645a0b: startup date [Wed Oct 05 11:35:57 CDT 2016]; root of context hierarchy
+2016-10-05 11:35:57 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:35:57 INFO  User:22 - Error has occured :(
+2016-10-05 11:35:57 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'driverClassName' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [com.mysql.jdbc.Driver]
+2016-10-05 11:35:58 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ae86c6a: startup date [Wed Oct 05 11:35:58 CDT 2016]; root of context hierarchy
+2016-10-05 11:35:58 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:35:58 INFO  User:22 - Error has occured :(
+2016-10-05 11:35:58 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'driverClassName' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [com.mysql.jdbc.Driver]
+2016-10-05 11:35:59 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7e1cb62: startup date [Wed Oct 05 11:35:59 CDT 2016]; root of context hierarchy
+2016-10-05 11:35:59 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:35:59 INFO  User:22 - Error has occured :(
+2016-10-05 11:35:59 WARN  ClassPathXmlApplicationContext:549 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'driverClassName' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [com.mysql.jdbc.Driver]
+2016-10-05 11:38:10 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7d06fc45: startup date [Wed Oct 05 11:38:10 CDT 2016]; root of context hierarchy
+2016-10-05 11:38:10 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:38:10 INFO  User:22 - Error has occured :(
+2016-10-05 11:38:10 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-10-05 11:38:11 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@7d06fc45: startup date [Wed Oct 05 11:38:10 CDT 2016]; root of context hierarchy
+2016-10-05 11:38:33 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33ebf80c: startup date [Wed Oct 05 11:38:33 CDT 2016]; root of context hierarchy
+2016-10-05 11:38:33 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:38:33 INFO  User:22 - Error has occured :(
+2016-10-05 11:38:33 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-10-05 11:38:33 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@33ebf80c: startup date [Wed Oct 05 11:38:33 CDT 2016]; root of context hierarchy
+2016-10-05 11:38:34 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2eee2764: startup date [Wed Oct 05 11:38:34 CDT 2016]; root of context hierarchy
+2016-10-05 11:38:34 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 11:38:34 INFO  User:22 - Error has occured :(
+2016-10-05 11:38:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-10-05 11:38:34 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@2eee2764: startup date [Wed Oct 05 11:38:34 CDT 2016]; root of context hierarchy
+2016-10-05 13:24:25 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@672c7736: startup date [Wed Oct 05 13:24:25 CDT 2016]; root of context hierarchy
+2016-10-05 13:24:25 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 13:24:25 INFO  User:22 - Error has occured :(
+2016-10-05 13:24:25 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-10-05 13:24:25 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@672c7736: startup date [Wed Oct 05 13:24:25 CDT 2016]; root of context hierarchy
+2016-10-05 13:26:24 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6f4ef229: startup date [Wed Oct 05 13:26:24 CDT 2016]; root of context hierarchy
+2016-10-05 13:26:24 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 13:26:24 INFO  User:22 - Error has occured :(
+2016-10-05 13:26:25 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 13:26:25 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@6f4ef229: startup date [Wed Oct 05 13:26:24 CDT 2016]; root of context hierarchy
+2016-10-05 14:11:15 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33bad6da: startup date [Wed Oct 05 14:11:15 CDT 2016]; root of context hierarchy
+2016-10-05 14:11:15 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:11:15 INFO  User:23 - Error has occured :(
+2016-10-05 14:11:15 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:13:20 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7ca43419: startup date [Wed Oct 05 14:13:20 CDT 2016]; root of context hierarchy
+2016-10-05 14:13:20 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:14:18 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@68dc1964: startup date [Wed Oct 05 14:14:18 CDT 2016]; root of context hierarchy
+2016-10-05 14:14:18 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:14:19 INFO  User:23 - Error has occured :(
+2016-10-05 14:14:19 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:14:19 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@68dc1964: startup date [Wed Oct 05 14:14:18 CDT 2016]; root of context hierarchy
+2016-10-05 14:21:28 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2b7c0f3c: startup date [Wed Oct 05 14:21:28 CDT 2016]; root of context hierarchy
+2016-10-05 14:21:28 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:21:29 INFO  User:23 - Error has occured :(
+2016-10-05 14:21:29 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:21:29 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-10-05 14:21:29 INFO  SQLErrorCodesFactory:126 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-10-05 14:24:40 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@44bc58de: startup date [Wed Oct 05 14:24:40 CDT 2016]; root of context hierarchy
+2016-10-05 14:24:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:24:40 INFO  User:23 - Error has occured :(
+2016-10-05 14:24:40 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:24:40 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@44bc58de: startup date [Wed Oct 05 14:24:40 CDT 2016]; root of context hierarchy
+2016-10-05 14:30:18 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@41eef41f: startup date [Wed Oct 05 14:30:18 CDT 2016]; root of context hierarchy
+2016-10-05 14:30:18 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:30:19 INFO  User:23 - Error has occured :(
+2016-10-05 14:30:19 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:30:19 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@41eef41f: startup date [Wed Oct 05 14:30:18 CDT 2016]; root of context hierarchy
+2016-10-05 14:38:57 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@91e31f0: startup date [Wed Oct 05 14:38:57 CDT 2016]; root of context hierarchy
+2016-10-05 14:38:57 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:38:57 INFO  User:23 - Error has occured :(
+2016-10-05 14:38:57 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:41:02 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a69c7b8: startup date [Wed Oct 05 14:41:02 CDT 2016]; root of context hierarchy
+2016-10-05 14:41:02 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:41:02 INFO  User:23 - Error has occured :(
+2016-10-05 14:41:02 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:45:27 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d173d2f: startup date [Wed Oct 05 14:45:27 CDT 2016]; root of context hierarchy
+2016-10-05 14:45:27 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:45:27 INFO  User:23 - Error has occured :(
+2016-10-05 14:45:27 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:45:56 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@41d63788: startup date [Wed Oct 05 14:45:56 CDT 2016]; root of context hierarchy
+2016-10-05 14:45:56 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:45:56 INFO  User:23 - Error has occured :(
+2016-10-05 14:45:56 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:50:30 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3695dedf: startup date [Wed Oct 05 14:50:30 CDT 2016]; root of context hierarchy
+2016-10-05 14:50:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:50:30 INFO  User:23 - Error has occured :(
+2016-10-05 14:50:30 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:50:30 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3695dedf: startup date [Wed Oct 05 14:50:30 CDT 2016]; root of context hierarchy
+2016-10-05 14:50:47 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cecd31e: startup date [Wed Oct 05 14:50:47 CDT 2016]; root of context hierarchy
+2016-10-05 14:50:47 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:50:47 INFO  User:23 - Error has occured :(
+2016-10-05 14:50:47 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:50:47 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@cecd31e: startup date [Wed Oct 05 14:50:47 CDT 2016]; root of context hierarchy
+2016-10-05 14:54:43 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@609ec62f: startup date [Wed Oct 05 14:54:43 CDT 2016]; root of context hierarchy
+2016-10-05 14:54:43 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:54:43 INFO  User:23 - Error has occured :(
+2016-10-05 14:54:43 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:54:43 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@609ec62f: startup date [Wed Oct 05 14:54:43 CDT 2016]; root of context hierarchy
+2016-10-05 14:56:22 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@b59f395: startup date [Wed Oct 05 14:56:22 CDT 2016]; root of context hierarchy
+2016-10-05 14:56:22 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:56:23 INFO  User:23 - Error has occured :(
+2016-10-05 14:56:23 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:56:23 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@b59f395: startup date [Wed Oct 05 14:56:22 CDT 2016]; root of context hierarchy
+2016-10-05 14:57:43 INFO  ClassPathXmlApplicationContext:581 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@16fb8bd4: startup date [Wed Oct 05 14:57:43 CDT 2016]; root of context hierarchy
+2016-10-05 14:57:43 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2016-10-05 14:57:43 INFO  User:23 - Error has occured :(
+2016-10-05 14:57:43 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2016-10-05 14:57:43 INFO  ClassPathXmlApplicationContext:982 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@16fb8bd4: startup date [Wed Oct 05 14:57:43 CDT 2016]; root of context hierarchy

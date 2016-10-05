@@ -1,91 +1,101 @@
 package com.jazinski.helloBot;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.charset.Charset;
 
-import javax.net.ssl.HttpsURLConnection;
+import java.io.IOException;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.jibble.pircbot.IrcException;
+import org.jibble.pircbot.NickAlreadyInUseException;
 import org.jibble.pircbot.PircBot;
-import org.json.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.dao.EmptyResultDataAccessException;
+
+import com.jazinski.weather.Weather;
+import com.jazinski.helloBot.IRC.*;
 
 
 public class MyBot extends PircBot {
 	
 	final Logger logger = Logger.getLogger(getClass().getName());
+	final Weather weatherAPI = new Weather("AIzaSyCr5UT60DJQY8No2rMgI0nzxLz7WnxaPyE");
 	
 	public MyBot() {
 		this.setName("testBot");
 	}
-	//AIzaSyCr5UT60DJQY8No2rMgI0nzxLz7WnxaPyE
-	
-	public void onMessage(String c, String u, String l, String h, String msg) {
-		User user = new User(u, l, h);
-		Message message = new Message(c, msg);
-		System.out.println("First Word: " + getFirstWord(message));
-		user.addMessage(message);
-		user.printInfo();
-		user.printMessages();
+
+	public void onMessage(String channel, String username, String login, String hostname, String message) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		UserJDBCTemplate userJDBCTemplate = (UserJDBCTemplate) context.getBean("userJDBCTemplate");
+		MessageJDBCTemplate messageJDBCTemplate = (MessageJDBCTemplate) context.getBean("messageJDBCTemplate");
+		
+		// Let me Search for the user
+		User user = null;
 		try {
-			getLatLong("78504");
-		} catch (Exception e) {
+			user = userJDBCTemplate.getUser(username);
+			userJDBCTemplate.update(user);
+			System.out.println("Updated last access date...");
+			System.out.println("Adding New Message..");
+			messageJDBCTemplate.create(user.getId(), channel, message);
+			
+		} catch (EmptyResultDataAccessException ex) {
+			System.out.println("Username: " + username + " was not found. Adding..");
+			userJDBCTemplate.create(username, login, hostname);
+			user = userJDBCTemplate.getUser(username);
+			System.out.println("Adding New Message..");
+			messageJDBCTemplate.create(user.getId(), channel, message);
+		}
+		user.printInfo();		
+		checkForCommand(channel, message);
+		((ClassPathXmlApplicationContext) context).close();
+	}
+
+	public void onDisconnect() {
+		System.out.println("Disconnected :-|");
+		try {
+			this.reconnect();
+			this.joinChannel("#cjazinski");
+		} catch (NickAlreadyInUseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IrcException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		checkForCommand(user, message);
 	}
 	
-	//https://maps.googleapis.com/maps/api/geocode/json?address=78504&key=AIzaSyCr5UT60DJQY8No2rMgI0nzxLz7WnxaPyE
-	//https://api.darksky.net/forecast/abf2672d3299b8822b57541bc46288cb/26.2892001,-98.2322355
-	public void onDisconnect() {
-		System.out.println("Disconnected :-|");
-	}
-	
-	public void checkForCommand(User user, Message msg) {
+	public void checkForCommand(String channel, String msg) {
 		if ("!sayHello".equals(getFirstWord(msg))) {
-			sayHello(msg.getChannel(), msg.getMessage());
+			sayHello(channel, msg);
+		}
+		if ("!weather".equals(getFirstWord(msg)) || "!w".equals(getFirstWord(msg))) {
+			sayWeather(channel, msg);
 		}
 	}
 	
-	private void getLatLong(String zip) throws Exception {
-		URL APIUrl = new URL("https://maps.googleapis.com/maps/api/geocode/json?address=" + zip + "&key=AIzaSyCr5UT60DJQY8No2rMgI0nzxLz7WnxaPyE");
-		
-		HttpsURLConnection connection = (HttpsURLConnection) APIUrl.openConnection();
-		connection.setDoOutput(true);
-		connection.setDoInput(true);
-		
-		//OutputStream outputStream = connection.getOutputStream();
-		//outputStream.write(rawMessage.getBytes(Charset.forName("UTF-8")));
-		//outputStream.close();
-		
-		BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-		
-		String output = "";
-		String outputCache = "";
-		while ((outputCache = br.readLine()) != null) {
-			output += outputCache;
+	private void sayWeather(String channel, String msg) {
+		String zipCode = getDataAfterCommand(msg);
+		try {
+			Map<String, String> weather = weatherAPI.getWeather(zipCode);
+			sendMessage(channel, "Weather for: " + weather.get("location") + " Currently: " + weather.get("summary") + " and " + weather.get("temp"));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			sendMessage(channel, "Error getting the weather :(");
 		}
-		br.close();
-		// Parse the JSON return and check status value
 		
-		JSONObject obj = new JSONObject(output.toString());
-		JSONArray res = (JSONArray) obj.get("results");
-		JSONObject results = res.toJSONObject(res);
-		JSONObject latLong = (JSONObject) results.get("location");
-		System.out.println("Longitude: " + latLong.getString("lat"));
-	}
+	}	
 	
-	private void sayHello(String channel, String message) {
+	private void sayHello(String channel, String msg) {
 		// TODO Auto-generated method stub
-		sendMessage(channel, "Hello, You sent me this: " + getDataAfterCommand(message));
+		sendMessage(channel, "Hello, You sent me this: " + getDataAfterCommand(msg));
 	}
 
-	private String getFirstWord(Message msg) {
-		return msg.getMessage().split(" ", 2)[0];
+	private String getFirstWord(String msg) {
+		return msg.split(" ", 2)[0];
 	}
 	
 	private String getDataAfterCommand(String msg) {

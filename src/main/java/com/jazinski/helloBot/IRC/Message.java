@@ -1,4 +1,4 @@
-package com.jazinski.helloBot;
+package com.jazinski.helloBot.IRC;
 
 import java.util.Date;
 
@@ -27,8 +27,16 @@ public class Message {
 		return channel;
 	}
 	
+	public void setChannel(String c) {
+		channel = c;
+	}
+	
 	public String getMessage() {
 		return message;
+	}
+	
+	public void setMessage(String m) {
+		message = m;
 	}
 		
 }
